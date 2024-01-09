@@ -1,0 +1,94 @@
+@font-face {
+    font-family: vazir-light;
+    src: url("../fonts/vazir/Vazir-Light.ttf");
+}
+:root{
+    --green1:#89d60e;
+    --green2:#73ad16;
+    --blue1:#01AAFA;
+    --blue2:#0193E1;
+   
+}  
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body::-webkit-scrollbar
+{
+    display: none;
+}
+body
+{
+    
+    max-width: 1920px;
+    
+}
+.main-container
+{
+    margin: 10px 50px;
+    min-height: 500px;
+
+}
+.article
+{
+    width: 100%;
+    height: 120px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+    border: 1px solid var(--blue1);
+    background-color: #f5fcff;
+    margin-bottom: 20px;
+
+}
+.article-image
+{
+    width: 108px;
+    height: 108px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 6px;
+    border: 1px solid var(--blue1);
+    box-sizing: border-box;
+}
+.article-image img
+{
+    height: 100%;
+    position: relative;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+
+}
+.article-name
+{
+    font-family: vazir-light;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    font-size: 25px;
+    color: var(--blue1);
+}
+.article-button
+{
+    border: none;
+    outline: none;
+    background-color: var(--blue1);
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: vazir-light;
+    font-size: 20px;
+    margin-left: 30px;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.article-button:hover
+{
+    background-color: var(--green2);
+}

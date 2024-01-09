@@ -1,0 +1,130 @@
+@font-face {
+    font-family: vazir-light;
+    src: url("../fonts/vazir/Vazir-Light.ttf");
+}
+  
+*{
+    padding: 0;
+    margin: 0;
+}
+.creat-text{
+    
+    text-align: center;
+    color: #777;
+    font-family: vazir-light;
+    font-size: 1em;
+    margin-top: 20px;
+    display: block;
+}
+.creat-text:hover{
+    font-weight: bold;
+    color:purple;
+    transition: .3s ;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+body{
+    background-image: url("../images/web/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+    direction: rtl;
+}
+
+.login .header{
+    text-align: center;
+    margin: 0px auto;
+    font-size: 25px;
+    color: #333;
+    font-family:vazir-light;
+    line-height: 120px;
+    height: 120px;
+}
+
+.login .username,.login .password{
+    font-family: vazir-light;
+    font-size: .7em;
+    color: #333;
+
+}
+
+.un-container,.pw-container{
+    margin: auto;
+    width: 80%;
+    border-bottom: 1px solid#999;
+    margin-top: 30px;
+    transition: all .7s;
+
+}
+.un-container input,.pw-container input{
+    border: none;
+    font-family: vazir-light;
+    padding: 15px;
+    outline: none;
+    width: 80%;
+}
+.un-container i ,.pw-container i  {
+    color: #999;
+    transition: all .7s;
+
+}
+
+.un-container:hover i,.pw-container:hover i{
+    color: purple;
+    transition: all .7s;
+}
+.un-container:hover,.pw-container:hover{
+    border-color:purple;
+    transition: all .7s;
+}
+
+
+
+#login{
+    position: relative;
+    width: 90%;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 15px 20px;
+    border: none;
+    margin-top: 25px;
+    border-radius: 30px;
+    font-family:vazir-light;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-image: url("../images/web/2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    transition: 1s;
+    
+}
+
+#login:hover{
+    background-position: right;
+    
+}
+
+
+
+.creat-account:hover{
+    color: purple;
+    border-color: purple;
+}
+
+
+.login{
+    width: 350px;
+    height: 600px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+}

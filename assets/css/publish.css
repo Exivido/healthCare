@@ -1,0 +1,172 @@
+@font-face {
+    font-family:vazir-light;
+    src: url("../fonts/vazir/Vazir-Light.ttf");
+}
+:root{
+    --green1:#89d60e;
+    --green2:#73ad16;
+    --blue1:#01AAFA;
+    --blue2:#0193E1;
+
+}   
+.blue
+{
+    color: var(--blue2);
+}
+.green{
+    color: var(--green2);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body::-webkit-scrollbar
+{
+    display: none;
+}
+body
+{
+    max-width: 1920px;
+    margin: auto;
+    background-image: url("../images/web/1.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.main-container
+{
+    min-height: 600px;
+    margin: 60px;
+    border-radius: 25px;
+    border:1px solid #eee;
+    box-shadow: 0px 0px 15px #777;
+    display: flex;
+    direction: rtl;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
+.title
+{
+    width: 50%;
+    padding-top:190px;
+    box-sizing: border-box;
+    background-color: #fff;
+
+}
+.title h2
+{
+    font-family: vazir-light;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+
+}
+.title h4
+{
+    font-family: vazir-light;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 60px;
+
+}
+.inputs
+{
+    border-radius: 25px;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid var(--blue1);
+    padding-right: 60px;
+    
+}
+.inputs .row
+{
+    display: block;
+    height: auto;
+    margin-bottom: 10px;
+
+}
+.inputs h2
+{
+    font-family: vazir-light;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 0px;
+}
+.row label
+{
+    display: block;
+    font-family: vazir-light;
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 10px;
+    
+}
+.row input
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #eee;
+    color: #333;
+    padding-right: 20px;
+    font-family: vazir-light;
+    font-size: 15px;
+    box-sizing: border-box;
+    
+}
+.row input:focus
+{
+    border: 1px solid var(--blue1);
+}
+.row textarea
+{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #eee;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    resize: none;
+    height: 200px;
+    font-family: vazir-light;
+    font-size: 15px;
+    overflow:hidden ;
+    overflow-y: scroll;
+
+
+}   
+.publish
+{
+    width: 180px;
+    border: none;
+    outline: none;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--blue1);
+    cursor: pointer;
+    color: white;
+    font-family: vazir-light;
+    font-size: 20px;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    line-height: 50px;
+}
+.publish:hover
+{
+    background-color: var(--blue2);
+}

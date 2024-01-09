@@ -1,0 +1,182 @@
+/*   -------------- fonts --------------------------- */
+@font-face {
+    font-family:vazir-light;
+    src: url("../fonts/vazir/Vazir-Light.ttf");
+}
+@font-face {
+    font-family:vazir-thin;
+    src: url("../fonts/vazir/Vazir-Thin.ttf");
+}
+@font-face {
+    font-family: vazir-bold;
+    src: url("../fonts/vazir/Vazir-Bold.ttf");
+}
+@font-face {
+    font-family: vazir-medium;
+    src: url("../fonts/vazir/Vazir-Medium.ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: vazir-light ;
+
+}
+
+body{
+    background-image: url("../images/web/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    direction: rtl;
+}
+.login{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 280px;
+}
+.login .header{
+    text-align: center;
+    margin: 40px;
+    font-size: 30px;
+    color: #333;
+
+}
+.sign-up .header{
+    text-align: center;
+    margin: 30px;
+    font-size: 30px;
+    color: #333;
+
+}
+.login .username,.login .password{
+    font-size: .7em;
+    color: #333;
+
+}
+.sign-up .username,.sign-up .password{
+    font-size: .7em;
+    color: #333;
+
+}
+.un-container,.pw-container{
+    margin: auto;
+    width: 80%;
+    border-bottom: 1px solid#999;
+    margin-top: 30px;
+    transition: all .7s;
+
+}
+.un-container input,.pw-container input{
+    border: none;
+    padding: 15px;
+    outline: none;
+    width: 75%;
+}
+.un-container i ,.pw-container i  {
+    color: #999;
+    transition: all .7s;
+    /* position: absolute; */
+    
+
+}
+
+.un-container:hover i,.pw-container:hover i{
+    color: purple;
+    transition: all .7s;
+}
+.un-container:hover,.pw-container:hover{
+    border-color:purple;
+    transition: all .7s;
+}
+
+.forgot-pass{
+    display: block;
+    font-size: .7em;
+    text-align: right;
+    padding: 10px 30px;
+    color: #777;
+    transition: 0.7s;
+    text-decoration: none;
+
+}
+.forgot-pass:hover{
+    color: purple;
+    font-size: .8em;
+    cursor: pointer;
+}
+#login,#sign-up{
+    width: 90%;
+    padding: 15px 20px;
+    display: block;
+    margin: auto;
+    border: none;
+    margin-top: 25px;
+    border-radius: 30px;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-image: url("../images/web/2.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    transition: 1s;
+}
+
+#login:hover,#sign-up:hover{
+    background-position: right;
+    
+}
+
+
+.creat-text{
+    text-align: center;
+    color: #777;
+    font-size: .8em;
+    margin-top: 20px;
+}
+.creat-account{
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #777;
+    display: block;
+    margin-top: 20px;
+    transition: .7s;
+    width: 200px;
+    border-bottom: #777 solid 1px;
+    padding-bottom: 10px;
+}
+.creat-account:hover{
+    color: purple;
+    border-color: purple;
+}
+.flip-card{
+    width: 310px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.inner-card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.login,.sign-up{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 20px;
+}
+.sign-up{
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
